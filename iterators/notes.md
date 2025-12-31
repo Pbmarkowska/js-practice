@@ -30,3 +30,28 @@ Mental model:
 | Collect matches    | array       |[]             | list of failing tests
 | First match        | object/null |null           | first failing
 | Last match         | object/null |null           | last failing
+
+
+Reduce patterns:
+
+Sum: `acc + value`
+
+Count: `acc[value] = (acc[value] || 0) + 1`
+
+Group:<br>
+<code>
+if (!acc[key]) {<br>
+&nbsp;&nbsp;acc[key] = []<br>
+} else {<br>
+&nbsp;&nbsp;acc[key].push(item)<br>
+}
+</code>
+
+
+Lookup:
+
+`acc[key] = value`
+
+Max/Min:
+
+`return acc > value ? acc : value`
