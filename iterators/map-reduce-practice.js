@@ -176,15 +176,6 @@ const users = [
   { id: 20, name: "Tom" }
 ];
 
-// works - but wrong
-const lookupMap2 = users.reduce((acc, { id, name}) => {
-  acc = {
-    ...acc,
-    [id]: name
-  }
-  return acc;
-}, {});
-
 const lookupMap = users.reduce((acc, {id, name}) => {
   acc[id] = name;
   return acc;
@@ -210,33 +201,68 @@ potem znowu natrafiam na 3, więc muszę podbić wartość o 1, i mam 3-2
 occurrences = {1:2, 3:3, 2:2 };
 
 
-
-
 const nums = [1, 3, 3, 2, 1, 3, 2];
 
-const occurrences = nums.reduce((acc, value) => {
-  acc[value] = (acc[value] || 0) + 1;
+// const occurrences = nums.reduce((acc, value) => {
+//   acc[value] = (acc[value] || 0) + 1;
+
+//   return acc;
+// }, {});
+
+// Take the current count if it exists and add 1, otherwise use 0, then add 1.
+
+const occurences = nums.reduce((acc, value) => {
+  if (acc[value] === undefined) {
+    acc[value] = 1
+  } else {
+    acc[value] = acc[value] + 1;
+  }
 
   return acc;
 }, {});
 
+// console.log("occurrences", occurences);
+
 // result: { '1': 2, '2': 2, '3': 3 }
 // muszę znaleźć klucz z najwyzsza wartoscia
 
-const occurencesList = Object.entries(occurrences);
-// console.log("occurencesList", occurencesList);
+const occurencesList = Object.entries(occurences);
 // result: [ [ '1', 2 ], [ '2', 2 ], [ '3', 3 ] ]
 
-const maxValue = occurencesList.reduce((acc, value) => {
-  if (acc > value) {
-    return acc;
-  } else {
-    return value
-  }
+const sorted = occurencesList.sort((a, b) => {
+  return b[1] - a[1];
 });
 
-const mostCommonValue = Number(maxValue[0]);
 
-console.log("maxValue", maxValue);
-console.log("mostCommonValue", mostCommonValue);
+console.log("occurencesList", occurencesList);
+console.log("sorted", sorted);
+
+
+// const maxValue = occurencesList.reduce((acc, value) => {
+//   if (acc[1] > value[1]) {
+//     return acc;
+//   } else {
+//     return value
+//   }
+// });
+
+// array destructuring, ignore index [0];
+// const maxValue2 = occurencesList.reduce((max, current) => {
+//   const [, maxCount] = max;
+//   const [, currentCount] = current;
+
+//   if (currentCount > maxCount) {
+//     return current
+//   } else {
+//     return max;
+//   }
+// });
+
+// const mostCommonValue = Number(maxValue[0]);
+// const mostCommonValue2 = Number(maxValue2[0]);
+
+// console.log("maxValue", maxValue);
+// console.log("maxValue2", maxValue2);
+// console.log("mostCommonValue", mostCommonValue);
+// console.log("mostCommonValue2", mostCommonValue2);
 */

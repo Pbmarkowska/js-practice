@@ -36,6 +36,8 @@ Reduce patterns:
 
 Sum: `acc + value`
 
+Count / Group - container that grows internally
+
 Count: `acc[value] = (acc[value] || 0) + 1`
 
 Group:<br>
@@ -49,6 +51,7 @@ if (!acc[key]) {<br>
 
 
 Lookup:
+Lookup map - container that adds or replaces keys
 
 `acc[key] = value`
 

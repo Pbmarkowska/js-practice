@@ -83,3 +83,24 @@ const maxValue = nums.reduce((acc, value) => {
 
 console.log("maxValue", maxValue);
 */
+
+/*
+TASK 5 - Build an object that counts how many times each number appears. - DONE
+
+Output:
+const numbersCount = {"1": 1, "2": 2, "3":3...}
+
+
+const numbers = [1, 2, 2, 3, 3, 3, 4];
+
+const numbersCount = numbers.reduce((acc, value) => {
+  if (acc[value]) {
+    acc[value] = acc[value] + 1
+  } else {
+    acc[value] = 1;
+  }
+  return acc;
+}, {});
+
+console.log("numbersCount", numbersCount);
+*/

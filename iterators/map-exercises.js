@@ -78,3 +78,18 @@ const users = [
     
   });
   */
+
+  /*
+  TASK 5 - Create a new array that contains only the users’ names in uppercase.
+  const userNames = [ 'ALICE', 'BOB'...];
+
+  */
+
+  const users = [
+  { id: 1, name: "alice", age: 25 },
+  { id: 2, name: "bob", age: 30 },
+  { id: 3, name: "charlie", age: 28 }
+];
+
+const userNames = users.map(({ name }) => name.toUpperCase());
+console.log("userNames", userNames)
