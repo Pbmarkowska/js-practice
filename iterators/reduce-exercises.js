@@ -104,3 +104,89 @@ const numbersCount = numbers.reduce((acc, value) => {
 
 console.log("numbersCount", numbersCount);
 */
+
+/*
+TASK 6  - Powtórka
+
+// Sum all the numbers
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((acc, value) => acc + value);
+console.log("sum", sum);
+
+// Expected output: {apple: 3, banana: 2, orange: 1}
+const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+const fruitCount = fruits.reduce((acc, value) => {
+  // if (acc[value]) {
+  //   acc[value] = acc[value] + 1;
+  // } else {
+  //   acc[value] = 1;
+  // }
+  // return acc;
+
+  acc = (acc[value] || 0) + 1
+  return acc
+},{});
+
+console.log("fruitCount", fruitCount)
+
+// Flatten the array
+const arrays = [[1, 2], [3, 4], [5]];
+
+const singleArray = arrays.reduce((acc, value) => {
+  // acc = acc.concat(value);
+  // return acc;
+
+  acc.push(...value);
+  return acc;
+},[]);
+
+console.log("singleArray", singleArray);
+
+const cart = [
+  { name: 'Book', price: 20 },
+  { name: 'Pen', price: 5 },
+  { name: 'Notebook', price: 15 }
+];
+
+// Count total cart value
+const totalCartValue = cart.reduce((acc, value) => {
+  acc = value.price + acc;
+  return acc;
+}, 0);
+
+console.log("totalCartValue", totalCartValue);
+
+
+// Group by role
+/*
+Expected output:
+{
+  admin: [
+    { name: 'Anna', role: 'admin' },
+    { name: 'Kasia', role: 'admin' }
+  ],
+  user: [
+    { name: 'Bartek', role: 'user' },
+    { name: 'Tomek', role: 'user' }
+  ]
+}
+
+const users = [
+  { name: 'Anna', role: 'admin' },
+  { name: 'Bartek', role: 'user' },
+  { name: 'Kasia', role: 'admin' },
+  { name: 'Tomek', role: 'user' }
+];
+
+const grouppedByRole = users.reduce((acc, { name, role}) => {
+  if (!acc[role]) {
+    acc[role] = []
+  }
+
+  acc[role].push({name, role});
+  
+  return acc;
+},{})
+
+console.log("grouppeByRole", grouppedByRole);
+*/

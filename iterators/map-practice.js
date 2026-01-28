@@ -70,3 +70,54 @@ const elements = [
 
   console.log("getVisibility", getVisibility());
 */
+
+/*
+TASK 4 - Utwórz nową tablicę, w której każda liczba jest pomnożona przez 2
+
+const numbers = [1, 2, 3, 4, 5]
+
+const multiplied = numbers.map(value => value * 2);
+*/
+
+/*
+TASK 5 - Utwórz nową tablicę, która zawiera tylko imiona użytkowników
+
+
+const users = [
+  { name: "Anna", age: 25 },
+  { name: "Piotr", age: 30 },
+  { name: "Kasia", age: 28 }
+];
+
+const names = users.map(user => user.name);
+console.log("names", names);
+*/
+
+
+/*
+TASK 6
+Utwórz nową tablicę obiektów w formacie:
+[
+  { id: 1, name: "Laptop" },
+  { id: 2, name: "Mouse" },
+  { id: 3, name: "Keyboard" }
+]
+
+
+const response = {
+  data: [
+    { id: 1, title: "Laptop", price: 3000 },
+    { id: 2, title: "Mouse", price: 100 },
+    { id: 3, title: "Keyboard", price: 250 }
+  ]
+};
+
+const newData = response.data.map(object => {
+  return {
+    id: object.id,
+    name: object.title
+  }
+});
+
+console.log("newData", newData);
+*/

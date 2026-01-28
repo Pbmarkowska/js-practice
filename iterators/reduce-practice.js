@@ -190,3 +190,29 @@ const grouppedTests = () => tests.reduce((acc, t) => {
 
 console.log("groupedTests", groupedTests());
 */
+
+/*
+TASK 7 - Oblicz łączną wartość wszystkich produktów
+
+const response = {
+  data: [
+    { id: 1, name: "Laptop", price: 3000 },
+    { id: 2, name: "Mouse", price: 100 },
+    { id: 3, name: "Keyboard", price: 250 },
+    { id: 4, name: "Monitor", price: 1200 }
+  ]
+};
+
+const totalPrice = response.data.reduce((acc, value) => {
+  acc+=value.price;
+  return acc;
+},0);
+console.log("totalPrice", totalPrice);
+
+const totalPrice2 = response.data.reduce((acc, value) => {
+  return acc + (value.price || 0);
+},0);
+
+console.log("totalPrice2", totalPrice2);
+*/
+

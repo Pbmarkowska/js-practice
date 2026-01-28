@@ -37,7 +37,6 @@ console.log("factorial", factorial);
 /*
 TASK 3 - Znajdź największą liczbę w tej tablicy
 Użyj pętli
-Wypisz ją w konsoli
 
 
 const numbers = [3, 7, 2, 9, 12, 4, 6]
@@ -57,7 +56,8 @@ const biggest = numbers.reduce((acc, value) => {
         return value;
     }
     return acc;
-});
+}, numbers[0]);
 
 console.log("biggest", biggest);
 */
+
