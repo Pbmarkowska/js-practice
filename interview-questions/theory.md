@@ -11,8 +11,8 @@ let i const mają zakres blokowy
 
 2. Czym jest hoisting?
 Wszystkie deklaracje zmiennych są hoistowane, ale nie wszystkie są inicjalizowane.
-Przy var mozna odwołac sie do zmiennej przed jej deklaracja, jest inicjalizowane jako undefined
-Przy const i let nie mozna odwolac sie do zmiennej przed jej deklaracja, bo dostaniemy wtedy ReferenceError
+Przy var mozna odwołac sie do zmiennej przed jej deklaracja, jest inicjalizowane jako undefined.
+Przy const i let nie mozna odwolac sie do zmiennej przed jej deklaracja, bo dostaniemy wtedy ReferenceError.
 
 3. Czym są funkcje strzałkowe i czym róznia się od zwyklych funkcji?
 Arrow function nie ma this'a, a zwykle function declaration ma this.
@@ -26,7 +26,6 @@ This czyli kontekst.
 Promise to jest obiekt reprezentujacy asynchroniczna operacje, ktora moze zakonczyc sie sukcesem (resolve) albo bledem (reject).
 async funkcja zawsze zwraca promise, a await zatrzymuje wykonanie funkcji async do momentu zakonczenia promise'a.
 Promise.all zwraca tablice wynikow jesli wszystkie zakoncza sie sukcesem, lub rzuca wyjatek przy pierwszym bledzie.
-
 
 6. Roznice pomiędzy metodami HTTP:
 GET - pobierz zasób
