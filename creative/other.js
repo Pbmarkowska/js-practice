@@ -2,9 +2,7 @@
 
 /*
 TASK 1
-
-
-
+Return "edit" or "coedit" label randomly
 
 const labels = ["edit", "coedit"]
 
@@ -57,8 +55,6 @@ Napisz w WebDriverIO funkcję, która:
 Pobiera wszystkie elementy .product
 Zwraca tablicę tylko tych produktów, które mają data-price < 100
 Możesz użyć async/await i metod WebDriverIO takich jak $$, getAttribute().
-
-
 
 class Products {
     get products() {
@@ -123,7 +119,6 @@ Napisz funkcję findUserByName(users, name), która:
 - zwróci obiekt użytkownika, jeśli istnieje
 - jeśli nie → zwróci null
 
-
 const users = [
   { name: "Anna", age: 28, isActive: true, id: 1 },
   { id: 2, name: "Bartek", age: 17, isActive: false },
@@ -153,7 +148,6 @@ const validateSchema = () => users.every((user) =>
     Object.entries(expectedSchema).every(([key, type]) => key in user && typeof user[key] === type));
 
 console.log("validateSchema", validateSchema());
-
 
 const validateUsers = () => users.every((user) => {
     return (

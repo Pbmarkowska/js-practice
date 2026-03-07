@@ -38,7 +38,6 @@ console.log("factorial", factorial);
 TASK 3 - Znajdź największą liczbę w tej tablicy
 Użyj pętli
 
-
 const numbers = [3, 7, 2, 9, 12, 4, 6]
 
 let biggestNumber = numbers[0]
@@ -60,4 +59,3 @@ const biggest = numbers.reduce((acc, value) => {
 
 console.log("biggest", biggest);
 */
-

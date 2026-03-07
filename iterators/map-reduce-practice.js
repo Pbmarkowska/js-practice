@@ -41,7 +41,6 @@ Return
 
 Muszę zwrócić obiekt, z parametrami: total (ilość testów), ile testów przeszło, a ile sfailowało
 
-
 const tests = [
   { name: 'Login page loaded', passed: true },
   { name: 'User logged in', passed: true },
@@ -64,7 +63,6 @@ console.log("mini report", miniTestReport());
 TASK 3 - Total price - DONE
 
 Expected output → 30
-
 
 const cart = [
   { name: "Book", price: 10, qty: 2 },
@@ -91,7 +89,6 @@ console.log("total price", totalPriceReduce);
 TASK 4 - Test report - DONE
 
 Expected output → { total: 3, passed: 2, failed: 1 }
-
 
 const tests = [
   { name: "login", passed: true },
@@ -161,7 +158,6 @@ const flatArr2 = arr.reduce((acc, value) => {
   return acc;
 }, []);
 
-
 console.log("flatArr2", flatArr2);
 */
 
@@ -169,7 +165,6 @@ console.log("flatArr2", flatArr2);
 TASK 7 - Build lookup map
 
 Expected output → { 10: "Ana", 20: "Tom" }
-
 
 const users = [
   { id: 10, name: "Ana" },
@@ -199,7 +194,6 @@ potem natrafiam na 3, więc muszę utworzyć kolejny klucz wartość 3-1,
 potem znowu natrafiam na 3, więc muszę podbić wartość o 1, i mam 3-2
 
 occurrences = {1:2, 3:3, 2:2 };
-
 
 const nums = [1, 3, 3, 2, 1, 3, 2];
 
@@ -233,10 +227,8 @@ const sorted = occurencesList.sort((a, b) => {
   return b[1] - a[1];
 });
 
-
 console.log("occurencesList", occurencesList);
 console.log("sorted", sorted);
-
 
 // const maxValue = occurencesList.reduce((acc, value) => {
 //   if (acc[1] > value[1]) {

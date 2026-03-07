@@ -5,7 +5,6 @@ TASK 1 - Sum all numbers - DONE
 
 Expected output → 30
 
-
 const nums = [5, 10, 15];
 
 const sum = nums.reduce((acc, num) => acc + num);
@@ -41,7 +40,6 @@ Expected output → { 20: ["Ana", "Tom"], 30: ["Leo"] }
 Muszę zwrócić obiekt, w którym property to number z obiektu z tablicy people z przypisaną do niego wartością, będącą tablicą
 z imionami (name), w których age jest taki sam
 
-
 const people = [
   { name: "Ana", age: 20 },
   { name: "Tom", age: 20 },
@@ -70,7 +68,6 @@ czyli muszę sprawdzić czy dany element jest większy niz kazdy pozostały.
 initialValue - moze bc 0, jesli wiem, ze wartosci sa tylko dodatnie
 jesli moga byc ujemne, lepiej nie podawac initialValue, iteracja zacznie sie defaultowo od pierwszego elementu.
 
-
 const nums = [3, 9, 2, 7];
 
 const maxValue = nums.reduce((acc, value) => {
@@ -89,7 +86,6 @@ TASK 5 - Build an object that counts how many times each number appears. - DONE
 
 Output:
 const numbersCount = {"1": 1, "2": 2, "3":3...}
-
 
 const numbers = [1, 2, 2, 3, 3, 3, 4];
 
@@ -155,7 +151,6 @@ const totalCartValue = cart.reduce((acc, value) => {
 }, 0);
 
 console.log("totalCartValue", totalCartValue);
-
 
 // Group by role
 /*

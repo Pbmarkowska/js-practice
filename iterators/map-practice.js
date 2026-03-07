@@ -18,13 +18,11 @@ console.log("textElements", textLabels());
 
 Conclusions:
 * When using fat arrow syntax/arrow function expression, {} not required, but desired for readability
-
 */
 
 /*
 TASK 2 - DONE
 Normalize UI texts, remove spaces, all lowercase, return array of strings
-
 
 const labels = [
     { text: '  USER NAME ' },
@@ -41,7 +39,6 @@ const labels = [
 TASK 3 - DONE
 Convert raw UI data into assertion-ready objects
 Return array with price bool type
-
 
 const rows = [
     { name: 'Laptop', price: '$1200' },
@@ -82,7 +79,6 @@ const multiplied = numbers.map(value => value * 2);
 /*
 TASK 5 - Utwórz nową tablicę, która zawiera tylko imiona użytkowników
 
-
 const users = [
   { name: "Anna", age: 25 },
   { name: "Piotr", age: 30 },
@@ -93,7 +89,6 @@ const names = users.map(user => user.name);
 console.log("names", names);
 */
 
-
 /*
 TASK 6
 Utwórz nową tablicę obiektów w formacie:
@@ -102,7 +97,6 @@ Utwórz nową tablicę obiektów w formacie:
   { id: 2, name: "Mouse" },
   { id: 3, name: "Keyboard" }
 ]
-
 
 const response = {
   data: [

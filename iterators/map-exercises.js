@@ -14,7 +14,6 @@ TASK 2 - Extract property
 
 Expected output → ["Ana", "Tom", "Leo"]
 
-
 const users = [
     { id: 1, name: "Ana" },
     { id: 2, name: "Tom" },
@@ -26,7 +25,7 @@ const users = [
   console.log("names", names);
   */
 
-  /*
+/*
   TASK 3 - Format strings
 
   Expected output → ["Ana", "Tom", "Leo"]
@@ -40,7 +39,7 @@ const users = [
   console.log("capitalized", capitalized1);
   */
 
-  /*
+/*
   TASK 4 - Add derived field
 
   Expected output → [{ name, price, priceWithTax }]
@@ -79,11 +78,9 @@ const users = [
   });
   */
 
-  /*
+/*
   TASK 5 - Create a new array that contains only the users’ names in uppercase.
   const userNames = [ 'ALICE', 'BOB'...];
-
-  */
 
   const users = [
   { id: 1, name: "alice", age: 25 },
@@ -93,3 +90,4 @@ const users = [
 
 const userNames = users.map(({ name }) => name.toUpperCase());
 console.log("userNames", userNames)
+*/

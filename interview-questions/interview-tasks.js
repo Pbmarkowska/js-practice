@@ -12,7 +12,6 @@ Wymagania:
 użyj map / filter / reduce
 nie modyfikuj oryginalnej tablicy
 
-
 const tests = [
   { name: 'Login test', status: 'passed', duration: 120 },
   { name: 'Checkout test', status: 'failed', duration: 300 },
@@ -74,7 +73,6 @@ console.log("even", even);
 "Automation"
 Napisz pętlę, która odwróci litery w słowie.
 
-
 const word = "Automation";
 let reversed = "";
 
@@ -88,14 +86,12 @@ console.log(reversed)
 /*
 Napisz pętlę, która zsumuje wszystkie liczby w tablicy
 
-
 const numbers = [5, 10, 15, 20, 25]
 
 const sum = numbers.reduce((acc, value) => acc+=value);
 
 console.log("sum", sum);
 */
-
 
 /*
 Napisz pętlę, która tworzy nową tablicę z liczbami większymi niż 10.

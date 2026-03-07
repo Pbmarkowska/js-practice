@@ -1,10 +1,12 @@
 /*
+TASK 1
+
 Stwórz nowy obiekt updatedUser, który:
 zmieni city na "Krakow"
 doda nową rolę "admin"
 NIE zmodyfikuje oryginalnego obiektu user
 Użyj wyłącznie spread operatora.
-*/
+
 
 const user = {
   id: 1,
@@ -28,3 +30,4 @@ const updatedUser = {
 console.log("user1", user);
 console.log("updatedUser", updatedUser);
 console.log("user2", user);
+*/

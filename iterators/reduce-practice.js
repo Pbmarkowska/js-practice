@@ -36,7 +36,6 @@ Expected output → ['Price visible']
 For each object in the array check passed property. If false, push test property to new array.
 Important: accumulator is an array, not a number.
 
-
 const results = [
   { test: 'Title visible', passed: true },
   { test: 'Price visible', passed: false },
@@ -98,12 +97,10 @@ Expected output →
 
 each object in array I need to reduce to this object name value and visible value.
 
-
 const fields = [
   { name: 'username', visible: true },
   { name: 'password', visible: false }
 ];
-
 
 // 1 {username: true }
 // 2 {password: false }
@@ -151,7 +148,6 @@ const firstFailingTest = () => {
 console.log("fist failing test", firstFailingTest());
 */
 
-
 /*
 TASK 6 - DONE
 Group tests by status
@@ -163,7 +159,6 @@ Group tests by status
 }
 
 Muszę zwrócić obiekt, w którym będą dwa parametry: passed i failed, które będą zawierać tablice z nazwą testu
-
 
 const tests = [
   { name: 'Login page loaded', passed: true },
@@ -215,4 +210,3 @@ const totalPrice2 = response.data.reduce((acc, value) => {
 
 console.log("totalPrice2", totalPrice2);
 */
-
