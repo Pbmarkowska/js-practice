@@ -59,3 +59,18 @@ const biggest = numbers.reduce((acc, value) => {
 
 console.log("biggest", biggest);
 */
+
+/*
+TO DO
+var keyword is not block-scoped
+ */
+const actions = [];
+console.log("actions0", actions);
+
+for (var i = 0; i < 3; i++) {
+  actions.push(() => console.log(i));
+}
+
+console.log("actions1", actions);
+actions.forEach((func) => func());
+console.log("actions2", actions);

@@ -102,3 +102,102 @@ const greaterThan10 = numbers.filter(n => n > 10);
 
 console.log("greaterThan10", greaterThan10);
 */
+
+/*
+Napisz funkcję, która zwróci true jeśli dana liczba jest potęgą 2 i false jeśli tak nie jest
+Kazda potega dwojki w systemie binarnym ma dokladnie jeden bit ustawiony na 1
+
+
+const isPowerOfTwo = (number) => {
+  return number > 0 && (number & (number - 1)) === 0;
+};
+
+console.log(isPowerOfTwo(8));
+*/
+
+/*
+Co zwróci ponizszy kod?
+let num = 10 -> deklaracja zmiennej w scopie globalnym
+let num = 20 -> deklaracja zmiennej w scopie lokalnym
+zmienne z let mają zakres blokowy
+num zostało uzyte zanim zostalo zainicjalizowane, stad ReferenceError
+
+
+let num = 10;
+
+const foo = () => {
+  console.log(num);
+  let num = 20;
+};
+
+foo();
+*/
+
+/*
+Co zwroci typeof null i dlaczego
+
+typeof null zwroci object, to historyczny blad w Javascript, ktory nigdy nie zostal naprawiony ze wzgledu na kompatybilnosc wsteczna
+W pierwszej wersji silnika Javascript wartosci byly przechowywane jako tagged values. Pierwsze bity okreslały typ danych, czyli np.
+object - 000
+int - 001
+string - 010
+bool - 011
+
+Null było zapisane jako 00000000 - czyli same zera, a tag 000 oznaczał obiekt, więc tak interpreter go rozpoznawał.
+*/
+
+/*
+Callstack 
+JS wykonuje kod synchronicznie, linia po linii. Callstack to struktura LIFO: Last In, First Out.
+
+
+function first() {
+  console.log("First starts");
+  second();
+  console.log("First ends");
+}
+
+function second() {
+  console.log("Second runs");
+}
+
+first();
+*/
+
+/*
+Napisz funkcję, która zwróci jedyną nieparzystą liczbę
+
+
+const array = [2, 4, 6, 7, 12];
+
+function findOdd(integers) {
+  return integers.filter((number) => {
+    return number % 2 !== 0;
+  });
+}
+
+console.log(findOdd(array));
+*/
+
+/*
+Wyjaśnij callstack: microtasks vs macrotasks.
+Program wypisze: start, end, promise, timeout
+Kolejność jest następująca:
+1. Kod synchroniczny
+2. Wszystkie microtasks
+3. Jeden macrotask
+4. Znowu microtasks
+
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Timeout");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("Promise");
+});
+
+console.log("End");
+*/
