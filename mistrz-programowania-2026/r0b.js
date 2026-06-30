@@ -22,7 +22,6 @@ potrzebujemy: jesli podamy n, musimy dostac liczby parzyste od 2 w góre, w zale
 */
 
 // const fs = require("fs");
-
 // const input = fs.readFileSync(0, "utf-8").trim();
 
 const buildPassword = (n) => {
