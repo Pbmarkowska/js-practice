@@ -76,6 +76,11 @@ Napisz pętlę, która odwróci litery w słowie.
 const word = "Automation";
 let reversed = "";
 
+for (let i = 0; i < word.lenght; i++) {
+  reversed+= word[i]
+}
+console.log(reversed)
+
 for (let i = 0; i < word.length; i++) {
     reversed = word[i] + reversed
 }
@@ -200,4 +205,16 @@ Promise.resolve().then(() => {
 });
 
 console.log("End");
+*/
+
+/*
+const word = "Automation";
+let reversed = "";
+
+for (let i = 0; i < word.length; i++) {
+  console.log("reversed przed:", reversed);
+  console.log("iteracja:", word[i]);
+  reversed = word[i] + reversed;
+  console.log("wynik", reversed);
+}
 */
