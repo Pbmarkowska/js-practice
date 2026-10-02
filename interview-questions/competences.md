@@ -29,4 +29,10 @@ Podstawowe operacje na obiektach: tworzenie, dostęp do parametrów
 
 Podstawowe typy
 Interfejsy
-Modifykatory dostępu pól wewnątrz klas: public, private, protected
+Modifykatory dostępu pól wewnątrz klas: public, private, protected, readonly
+
+# Podstawy CI/CD - teoria i praktyka
+
+# Konteneryzacja - podstawy Dockera
+
+# Frameworki - web: webdriver.io, cypress, playwright, selenium webdriver

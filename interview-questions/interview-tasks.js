@@ -218,3 +218,157 @@ for (let i = 0; i < word.length; i++) {
   console.log("wynik", reversed);
 }
 */
+// const users = [
+//   { name: "Anna", active: true, age: 32 },
+//   { name: "Jan", active: false, age: 25 },
+//   { name: "Kasia", active: true, age: 17 },
+//   { name: "Piotr", active: true, age: 41 },
+//   { name: "Marek", active: false, age: 35 },
+// ];
+
+// const getActiveAdults = () =>
+//   users.filter((user) => user.active && user.age >= 18);
+// console.log(getActiveAdults());
+
+// const responses = [
+//   { status: 200, body: { id: 1 } },
+//   { status: 500, body: null },
+//   { status: 201, body: { id: 2 } },
+//   { status: 404, body: null },
+//   { status: 200, body: { id: 3 } },
+// ];
+
+// const getSuccessfulResponses = (table) => {
+//   const newTable = table.filter((element) =>
+//     element.status.toString().startsWith("2")
+//   );
+//   return newTable.map((element) => element.body);
+// };
+
+// console.log(getSuccessfulResponses(responses));
+
+// const numbers = [3, 7, 2, 9, 4, 10, 6];
+
+// const sumEvenNumbers = (table) =>
+//   table.reduce((acc, value) => (value % 2 === 0 ? acc + value : acc), 0);
+
+// console.log(sumEvenNumbers(numbers));
+
+// const sumEvenNumbers = (table) => {
+//   let sum = 0;
+
+//   for (const number of table) {
+//     if (number % 2 === 0) {
+//       sum += number;
+//     }
+//   }
+//   return sum;
+// };
+
+// const sumEvenNumbers = (table) => {
+//   let sum = 0;
+
+//   for (let i = 0; i <= table.length; i++) {
+//     if (table[i] % 2 === 0) {
+//       sum += table[i];
+//     }
+//   }
+//   return sum;
+// };
+
+// const sumEvenNumbers = (table) => {
+//   let sum = 0;
+//   let i = 0;
+
+//   while (i < table.length) {
+//     if (table[i] % 2 === 0) {
+//       sum += table[i];
+//     }
+//     i++;
+//   }
+//   return sum;
+// };
+
+// const sumEvenNumbers = (table) => {
+//   let sum = 0;
+//   let i = 0;
+
+//   do {
+//     if (table[i] % 2 === 0) {
+//       sum += table[i];
+//     }
+//     i++;
+//   } while (i <= table.length);
+//   return sum;
+// };
+
+// console.log(sumEvenNumbers(numbers));
+
+// const numbers = [5, 12, 7, 20, 3, 18, 9];
+
+// const findFirstBigEvenNumber = (table) => {
+//   for (let i = 0; i <= table.length; i++) {
+//     if (table[i] % 2 === 0 && table[i] > 10) {
+//       return table[i];
+//     }
+//   }
+// };
+
+// const findFirstBigEvenNumber1 = (table) =>
+//   table.find((element) => element % 2 === 0 && element > 10);
+
+// const findFirstBigEvenNumber2 = (table) =>
+//   table.filter((element) => element % 2 === 0 && element > 10);
+
+// console.log(findFirstBigEvenNumber(numbers));
+// console.log(findFirstBigEvenNumber1(numbers));
+// console.log(findFirstBigEvenNumber2(numbers));
+
+// const statuses = ["PAID", "PENDING", "PAID", "FAILED", "PAID", "PENDING"];
+
+// const countPaidPayments = (table) => {
+//   let count = 0;
+
+//   for (let i = 0; i < table.length; i++) {
+//     if (table[i] === "PAID") {
+//       count = count + 1;
+//     }
+//   }
+//   return count;
+// };
+
+// console.log(countPaidPayments(statuses));
+
+// const numbers = [3, 8, 12, 5, 20];
+
+// const firstGreater = (table) => {
+//   let i = 0;
+//   let number;
+
+//   while (i < table.length) {
+//     if (table[i] > 10) {
+//       number = table[i];
+//       break;
+//     }
+//     i++;
+//   }
+//   return number;
+// };
+
+// console.log(firstGreater(numbers));
+
+// const hello = "hello";
+
+// const olleh = hello.split("").reverse().join("");
+
+// const reverseString = (string) => {
+//   let newWord = "";
+
+//   for (let i = string.length - 1; i >= 0; i--) {
+//     newWord += string[i];
+//   }
+
+//   return newWord;
+// };
+
+// console.log(reverseString(hello));
